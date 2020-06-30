@@ -1,5 +1,5 @@
 from utils.log_return import log_return, get_falls_raises, feature_extraction_fallraise
-from utils.db_util import connect_to_db, read_sec_list, download_data_daily
+from utils.db_util import connect_to_db,  download_data_daily
 import matplotlib.pyplot as plt
 
 
