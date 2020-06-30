@@ -36,8 +36,11 @@ python daily_visualization.py
 ```
 
 ## Contributing
+* **Thank you for and welcome to participate this project!**
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+* **To contribute, please first create your own feature branch (with naming convention: feature/[feature name]/[contributor]), make your change and create pull request to the DEVELOP branch.**
+
+* **Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.**
 
 ## Versioning
 
