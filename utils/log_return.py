@@ -8,6 +8,14 @@ def log_return(df_candle, res_name="log_return", col_name="close_price", shift=5
     return df_candle
 
 
+def log_return_intraday(df_candle, res_name="log_return_intra", col_bft="open_price", col_aft="close_price", abs=True):
+    if abs:
+        df_candle[res_name] = np.absolute(np.log(df_candle[col_aft]) - np.log(df_candle[col_bft]))
+    else:
+        df_candle[res_name] = np.log(df_candle[col_aft]) - np.log(df_candle[col_bft])
+    return df_candle
+
+
 def get_falls_raises(df_candle, falls_thd, raises_thd, shift=5):
     falls = list()
     raises = list()

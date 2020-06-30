@@ -1,5 +1,7 @@
 import csv
+import scipy
 import datetime
+import matplotlib.pyplot as plt
 
 
 def read_sec_list(file_name):
@@ -74,3 +76,12 @@ def date_int_increment(date_key_int: int) -> int:
             date_key_int = date_key_int * 100 + 1
         date_key_int = date_key_int * 100 + 1
     return date_key_int
+
+
+def measure_distribution(df, col_name, plot=False, bin=100):
+    mean = df[col_name].mean()
+    std = df[col_name].std()
+    if plot:
+        df.hist(column=col_name, bins=bin)
+        plt.show()
+    return mean, std
